@@ -13,4 +13,4 @@ def fizzbuzz():
         elif i % 5 == 0 and i % 3 == 0:
             print("{:s}".format(fb, end=""))
         if i != 100:
-            print("{}". format(end=""))
+            print("")
