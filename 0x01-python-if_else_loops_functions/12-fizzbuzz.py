@@ -5,13 +5,13 @@ def fizzbuzz():
     fb = "FizzBuzz"
     for i in range(0, 101):
         if i % 3 != 0 and i % 5 != 0:
-            print("{:d} ".format(i, end=""))
+            print("{:d} ".format(i), end="")
         elif i % 3 == 0:
-            print("{:s} ".format(f, end=""))
+            print("{:s} ".format(f), end="")
         elif i % 5 == 0:
             if i != 100:
-                print("{:s} ".format(b, end=""))
+                print("{:s} ".format(b), end="")
             else:
-                print("{:s}".format(b, end=""))
+                print("{:s}".format(b), end="")
         elif i % 5 == 0 and i % 3 == 0:
-            print("{:s} ".format(fb, end=""))
+            print("{:s} ".format(fb), end="")
