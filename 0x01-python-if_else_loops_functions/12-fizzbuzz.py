@@ -9,9 +9,6 @@ def fizzbuzz():
         elif i % 3 == 0:
             print("{:s} ".format(f), end="")
         elif i % 5 == 0:
-            if i != 100:
-                print("{:s} ".format(b), end="")
-            else:
-                print("{:s}".format(b), end="")
+            print("{:s} ".format(b), end="")
         elif i % 5 == 0 and i % 3 == 0:
             print("{:s} ".format(fb), end="")
