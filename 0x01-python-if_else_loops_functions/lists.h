@@ -11,7 +11,7 @@
 typedef struct listint_s
 {
 	int n;
-	listint_s *next;
+	struct istint_s *next;
 } listint_t;
 
 listint_t *add_nodeint_end(listint_t **head, const int n);
