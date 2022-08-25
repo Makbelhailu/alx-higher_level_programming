@@ -1,4 +1,4 @@
-chmod +x *
+chmod 777 *
 git add .
 git commit -m "python is cool"
 git push origin master
