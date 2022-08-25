@@ -1,0 +1,4 @@
+chmod +x *
+git add .
+git commit -m "python is cool"
+git push orign master
