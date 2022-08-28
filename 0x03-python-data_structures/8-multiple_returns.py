@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
     leng = len(sentence)
-    if lang != 0:
-        first = sentence[0]
+    if lang == 0:
+        return (leng, None)
     else:
-        first = None
-    new = leng, first
-    return (new)
+        first = sentence[0]
+        new = leng, first
+        return (new)
