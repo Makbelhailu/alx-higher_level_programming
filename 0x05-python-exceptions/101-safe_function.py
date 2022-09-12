@@ -8,3 +8,6 @@ def safe_function(fct, *args):
     except (IndexError, ValueError, TypeError, ZeroDivisionError) as er:
         print(f"Exception: {er}", file=sys.stderr)
         return None
+    except RuntimeError:
+        print(f"Exception: {er}", file=sys.stderr)
+        return None
