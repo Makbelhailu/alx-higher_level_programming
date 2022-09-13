@@ -44,7 +44,7 @@ class Square:
         else:
             self.__size = value
 
-    @propety
+    @property
     def position(self):
         """return position"""
         return (self.__position)
