@@ -3,8 +3,8 @@
 
 
 class Square:
-    """Class to create a square with size"""
+    """Class to create a square with it size"""
 
     def __int__(self, square_size):
-        """Constracting a private size"""
+        """Constractor of the  size"""
         self.__size = square_size
