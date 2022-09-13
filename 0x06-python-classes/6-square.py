@@ -10,7 +10,7 @@ Class with size and position
 class Square:
     """create size of square and position"""
 
-    def __init__(self, size=0, position=(0, 0)):
+    def __init__(self, size=0, position=(0,0)):
         """constractor of square and its position"""
         self.size = size
         self.position = position
