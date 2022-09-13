@@ -12,17 +12,8 @@ class Square:
 
     def __init__(self, size=0, position=(0, 0)):
         """constractor of square and its position"""
-        if type(size) is not int:
-            raise TypeError("size must be an integer")
-        elif size < 0:
-            raise ValueError("size must be >= 0")
-        else:
-            self.__size = size
-        if len(position) != 2 or position[0] < 0 or position[1] < 0 \
-                or type(position) is not tuple:
-            raise TypeError("position must be a tuple of 2 positive integers")
-        else:
-            self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         """return the area"""
