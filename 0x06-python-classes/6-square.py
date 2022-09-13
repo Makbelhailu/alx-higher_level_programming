@@ -10,7 +10,7 @@ Class with size and position
 class Square:
     """create size of square and position"""
 
-    def __init__(self, size=0, position=(0,0)):
+    def __init__(self, size=0, position=(0, 0)):
         """constractor of square and its position"""
         self.size = size
         self.position = position
@@ -53,8 +53,8 @@ class Square:
     def position(self, value):
         """setter for position"""
         if len(value) != 2 or type(value) is not tuple \
-                or value[0] is not int \
-                or value[1] is not int \
+                or type(value[0]) is not int \
+                or type(value[1]) is not int \
                 or (value[0] < 0 or value[1] < 0):
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
