@@ -1,5 +1,10 @@
 #!/usr/bin/python3
-"""class with size, area and print #"""
+"""
+class with size
+- calculate area
+- print_square method
+- getter and setter
+"""
 
 
 class Square:
@@ -20,8 +25,8 @@ class Square:
         if self.__size == 0:
             print()
         else:
-            for i in range(self.__size):
-                print("#" * sel.__size)
+            for row in range(self.__size):
+                print("#" * self.__size)
 
     @property
     def size(self):
