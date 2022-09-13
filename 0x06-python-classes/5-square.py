@@ -10,6 +10,7 @@ class with size
 class Square:
     """create class size area and print it"""
     def __init__(sf, size=0):
+        """constractor of class size"""
         if type(size) is not int:
             raise TypeError("size must be an integer")
         elif size < 0:
