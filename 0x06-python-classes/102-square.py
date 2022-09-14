@@ -50,7 +50,7 @@ class Square:
     @size.setter
     def size(self, value):
         """setter for size"""
-        if type(value) is not int or type(value) is not float:
+        if (type(value) is not int) or (type(value) is not float):
             if value < 0:
                 raise ValueError("size must be >= 0")
             else:
