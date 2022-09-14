@@ -56,4 +56,4 @@ class Square:
             else:
                 self.__size = value
         else:
-             raise TypeError("size must be a number")
+            raise TypeError("size must be a number")
