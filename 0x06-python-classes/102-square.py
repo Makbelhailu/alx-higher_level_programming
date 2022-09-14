@@ -14,16 +14,22 @@ class Square:
         else:
             self.__size = size
 
+    def __lt__(self, other):
+        """compare with <"""
+        return (self.area() < other.area())
+
     def area(self):
         """return area"""
         return (self.__size ** 2)
 
     @property
     def size(self):
+        """getter for size"""
         return (self.__size ** 2)
 
     @size.setter
     def size(self, value):
+        """setter for size"""
         if type(value) is not int:
             raise TypeError("size must be a number")
         elif value < 0:
