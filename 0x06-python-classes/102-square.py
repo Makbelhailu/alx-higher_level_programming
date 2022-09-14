@@ -18,6 +18,26 @@ class Square:
         """compare with <"""
         return (self.area() < other.area())
 
+    def __gt__(self, other):
+        """ compare with >"""
+        return (self.area() > other.area())
+
+    def __le__(self, other):
+        """compare with <="""
+        return (self.area() <= other.area())
+
+    def __ge__(self, other):
+        """compare with >="""
+        return (self.area() >= other.area())
+
+    def __eq__(self, other):
+        """compare with =="""
+        return (self.area() == other.area())
+
+    def __ne__(self, other):
+        """compare with !="""
+        return (self.area() != other.area())
+
     def area(self):
         """return area"""
         return (self.__size ** 2)
