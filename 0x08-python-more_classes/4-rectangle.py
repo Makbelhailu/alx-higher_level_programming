@@ -52,4 +52,4 @@ class Rectangle:
 
     def __repr__(self):
         '''Returns formal string representation...'''
-        return "Rectangle(" + str(self.width) "," + str(self.height) + ")"
+        return "Rectangle(" + str(self.width) + "," + str(self.height) + ")"
