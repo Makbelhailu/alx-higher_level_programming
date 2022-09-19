@@ -10,7 +10,6 @@ class Rectangle:
     print_symbol = "#"
     """any type: symbol for printing rectangle"""
 
-
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
@@ -56,7 +55,8 @@ class Rectangle:
         if not self.width or not self.height:
             return ""
         else:
-            return ((str(self.print_symbol) * self.__width + '\n') * self.__height)[:-1]
+            return ((str(self.print_symbol) * self.__width + '\n') *
+                    self.__height)[:-1]
 
     def __repr__(self):
         """Returns formal string representation..."""
