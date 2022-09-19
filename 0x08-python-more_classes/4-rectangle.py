@@ -37,16 +37,19 @@ class Rectangle:
         return self.__height * self.__width
 
     def perimeter(self):
+        """rerurn perimeter"""
         if self.__width == 0 or self.__height == 0:
             return 0
         else:
             return 2 * (self.__height + self.__width)
 
     def __str__(self):
+        """primt area"""
         if self.__width == 0 or self.__height == 0:
             return ""
         else:
             return (("#" * self.__width + "\n") * self.__height)[:-1]
 
     def __repr__(self):
+        """print the form"""
         return ("Rectangle(" + str(self.__width) "," + str(self.__height) + ")")
