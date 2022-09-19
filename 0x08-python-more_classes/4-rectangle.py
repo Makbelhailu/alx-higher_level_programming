@@ -55,5 +55,5 @@ class Rectangle:
         return (("#" * self.__width + "\n") * self.__height)[:-1]
 
     def __repr__(self):
-        '''Returns formal string representation...'''
+        """Returns formal string representation..."""
         return f"Rectangle({str(self.__width)},{str(self.__height)})"
