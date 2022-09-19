@@ -10,6 +10,7 @@ class Rectangle:
     print_symbol = "#"
     """any type: symbol for printing rectangle"""
 
+
     def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
