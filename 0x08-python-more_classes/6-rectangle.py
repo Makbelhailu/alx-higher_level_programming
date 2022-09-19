@@ -60,4 +60,4 @@ class Rectangle:
     def __del__(self):
         """Called when deleting an instance of rectangle"""
         Rectangle.number_of_instances -= 1
-        return "Bye rectangle..."
+        print("Bye rectangle...")
