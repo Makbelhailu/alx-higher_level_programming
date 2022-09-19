@@ -11,10 +11,12 @@ class Rectangle:
 
     @property
     def width(self):
+        """getter for width"""
         return self.__width
 
     @width.setter
     def width(self, value):
+        """setter for width"""
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
@@ -23,10 +25,12 @@ class Rectangle:
 
     @property
     def height(self):
+        """getter for height"""
         return self.__height
 
     @height.setter
     def height(self, value):
+        """setter for height"""
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
@@ -52,4 +56,4 @@ class Rectangle:
 
     def __repr__(self):
         '''Returns formal string representation...'''
-        return "Rectangle(" + str(self.width) + "," + str(self.height) + ")"
+        return f"Rectangle({str(self.__width)},{str(self.__height)})"
