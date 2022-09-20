@@ -4,5 +4,5 @@
 
 class LockedClass:
     """loackclass"""
-    first_name = ""
+    first_name
     pass
