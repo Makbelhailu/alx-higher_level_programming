@@ -3,5 +3,5 @@
 
 
 class LockedClass:
-    """loackclass"""
-    __slot__ = "first_name"
+    """loackclass to save memory"""
+    __slot__ = "first_name",
