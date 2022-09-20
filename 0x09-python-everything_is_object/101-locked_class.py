@@ -4,5 +4,4 @@
 
 class LockedClass:
     """loackclass"""
-    __slot__ = "first_name",
-    pass
+    __slot__ = "first_name"
