@@ -3,12 +3,12 @@
 
 
 def isSafe(board, row, col):
-    '''Checks if position is safe from attack.
+    """Checks if position is safe from attack.
     Args:
         board: The board state.
         row: The row to check.
         col: The column to check.
-    '''
+    """
     for c in range(col):
         if board[c] is row or abs(board[c] - row) is abs(c - col):
             return False
@@ -16,11 +16,11 @@ def isSafe(board, row, col):
 
 
 def checkBoard(board, col):
-    '''Checks the board state column by column using backtracking.
+    """Checks the board state column by column using backtracking.
     Args:
         board: The board state.
         col: The current colum to check.
-    '''
+    """
     n = len(board)
     if col is n:
         print(str([[c, board[c]] for c in range(n)]))
