@@ -54,3 +54,10 @@ Test string, integer:
     Traceback (most recent call last):
         ...
     TypeError: a must be an integer
+
+Test integer, string:
+
+    >>> add_integer(5, "foo")
+    Traceback (most recent call last):
+        ...
+    TypeError: b must be an integer
