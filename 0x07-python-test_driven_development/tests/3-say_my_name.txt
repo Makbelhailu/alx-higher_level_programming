@@ -42,12 +42,12 @@ Test with no firstname:
 Test with no last name:
 
     >>> say_my_name("Walter", )
-    My name is Walter
+    My name is Walter 
 
 Test with empty last name:
 
     >>> say_my_name("Walter", "")
-    My name is Walter
+    My name is Walter 
 
 Test with both int:
 
@@ -59,7 +59,7 @@ Test with both int:
 Test with only firstname:
 
    >>> say_my_name("Walter")
-   My name is Walter
+   My name is Walter 
 
 Test with float:
 
@@ -85,7 +85,7 @@ Test with float and int:
 Test empty string:
 
    >>> say_my_name("", "")
-   My name is
+   My name is  
 
 Test just spaces:
 
