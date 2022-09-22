@@ -15,7 +15,6 @@ def say_my_name(first_name, last_name=""):
     print(f"My name is {first_name} {last_name}")
 
 
-
 if __name__ == "__main__":
     import doctest
     doctest.testfile("tests/3-say_my_name.txt")
