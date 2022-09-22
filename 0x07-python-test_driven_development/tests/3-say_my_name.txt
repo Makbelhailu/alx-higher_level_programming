@@ -86,3 +86,9 @@ Test empty string:
 
    >>> say_my_name("", "")
    My name is
+
+Test just spaces:
+
+   >>> say_my_name("   ", "   ")
+   My name is        
+
