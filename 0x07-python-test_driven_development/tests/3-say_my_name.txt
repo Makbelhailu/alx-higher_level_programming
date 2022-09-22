@@ -81,3 +81,8 @@ Test with float and int:
    Traceback (most recent call last):
    ...
    TypeError: first_name must be a string
+
+Test empty string:
+
+   >>> say_my_name("", "")
+   My name is
