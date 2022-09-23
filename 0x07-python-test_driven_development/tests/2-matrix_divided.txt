@@ -73,5 +73,35 @@ Test unmodified matrix:
     >>> x = [[1,2,3], [4,5,6]]
     >>> matrix_divided(x, 3)
     [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
-    >>> x[0][0]
-    1
+    >>> x
+    [[1,2,3], [4,5,6]]
+
+Test 1st arg empty list:
+    >>> matrix_divided([], 1)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+Test division by non num:
+    >>> matrix_divided([[2]], "foo")
+    Traceback (most recent call last):
+    ...
+    TypeError: div must be a number
+
+Test missing 1 arg:
+    >>> matrix_divided()
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+Test 1st arg a:
+    >>> matrix_divided(a, 1)
+    Traceback (most recent call last):
+    ...
+    NameError: name 'a' is not defined
+
+Test 1st arg None:
+    >>> matrix_divided(None, 1)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists)of integers/floats

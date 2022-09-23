@@ -7,7 +7,7 @@ def matrix_divided(matrix, div):
     return tge divided list
     """
 
-    if not isinstance(div, (int,float)):
+    if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
     if not isinstance(matrix, list) or len(matrix) == 0:
         raise TypeError("matrix must be a matrix (list of lists)" +
@@ -25,7 +25,6 @@ def matrix_divided(matrix, div):
                 raise TypeError("matrix must be a matrix (list of lists) " +
                                 "of integers/floats")
     return ([[round(x / div, 2) for x in row] for row in matrix])
-
 
 
 if __name__ == "__main__":
