@@ -86,3 +86,17 @@ Test negative and float:
 
    >>> add_integer(10.5, -5)
    5
+
+Test both args invalid:
+
+    >>> add_integer(None, None)
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
+
+Test two strings:
+
+    >>> add_integer("foo", "boo")
+    Traceback (most recent call last):
+        ...
+    TypeError: a must be an integer
