@@ -94,11 +94,11 @@ Test missing 1 arg:
     ...
     TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
 
-Test 1st arg a:
-    >>> matrix_divided(a, 1)
+Test empty matrix more:
+    >>> matrix_divided([[], [], []], 10)
     Traceback (most recent call last):
     ...
-    NameError: name 'a' is not defined
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 Test 1st arg None:
     >>> matrix_divided(None, 1)
