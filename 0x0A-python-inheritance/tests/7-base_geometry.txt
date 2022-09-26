@@ -107,7 +107,14 @@ integer_validator method tuple:
     TypeError: Foo must be an integer
 
 integer_validator method negative value:
-    >>> bg.integer_validator("key", -10)
+    >>> bg.integer_validator("key", -100)
     Traceback (most recent call last):
     ValueError: key must be greater than 0
 
+integer_validator method dic:
+    >>> bg.integer_validator("Foo", {1, 2})
+    Traceback (most recent call last):
+    TypeError: Foo must be an integer
+
+integer_validator method normal value:
+    >>> bg.integer_validator("key", 98)
