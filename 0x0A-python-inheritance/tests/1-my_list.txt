@@ -49,6 +49,8 @@ Test with negative:
     [-1, -2, -3, -4]
     >>> my_list.print_sorted()
     [-4, -3, -2, -1]
+    >>> print(my_list)
+    [-1, -2, -3, -4]
 
 Test 0 with anther num:
 
@@ -76,3 +78,5 @@ Test positive and negative:
     [-1, 7, -2, 5]
     >>> my_list.print_sorted()
     [-2, -1, 5, 7]
+    >>> print(my_list)
+    [-1, 7, -2, 5]
