@@ -37,6 +37,7 @@ area method normal test:
 
 integer_validator() instance method
 -----------------------------------
+
 integer_validator is an instance method:
     >>> type(BaseGeometry.__dict__['integer_validator'])
     <class 'function'>
@@ -44,16 +45,19 @@ integer_validator is an instance method:
 integer_validator method called via class with no args:
     >>> bg.__class__.integer_validator()
     Traceback (most recent call last):
+    ...
     TypeError: integer_validator() missing 3 required positional arguments: 'self', 'name', and 'value'
 
 integer_validator method arg test (0 args):
     >>> bg.integer_validator()
     Traceback (most recent call last):
+    ...
     TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
     
 integer_validator method arg test (3 args):
     >>> bg.integer_validator(1, 1, 1)
     Traceback (most recent call last):
+    ...
     TypeError: integer_validator() takes 3 positional arguments but 4 were given
 
 integer_validator method float.0 value:
