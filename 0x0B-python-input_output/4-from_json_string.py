@@ -4,6 +4,6 @@
 import json
 
 
-def from_json_string(my_srt):
+ def from_json_string(my_str):
     """fonction to convert"""
     return json.loads(my_str)
