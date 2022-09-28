@@ -16,7 +16,8 @@ class Student:
         dicts = {}
         if type(attrs) is list and all([type(attr) == str for attr in attrs]):
             for i in attrs:
-                dicts[i] = self.__dict__[i]
+                if hasattr(self.__dict__, i):
+                    dicts[i] = self.__dict__[i]
 
             return dicts
         else:
