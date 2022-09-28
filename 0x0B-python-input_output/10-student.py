@@ -13,12 +13,8 @@ class Student:
 
     def to_json(self, attrs=None):
         """return the dictionary"""
-        dicts = {}
         if type(attrs) is list and all([type(attr) == str for attr in attrs]):
-            for i in attrs:
-                if hasattr(self.__dict__, i):
-                    dicts[i] = self.__dict__[i]
-
-            return dicts
+            return {key: val for key, val in self.__dict__.items() if key in
+                    attrs}
         else:
             return self.__dict__
