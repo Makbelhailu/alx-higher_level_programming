@@ -18,4 +18,6 @@ class Student:
             for i in attrs:
                 dicts[i] = self.__dict__[i]
 
-        return dicts
+            return dicts
+        else:
+            return self.__dict__
