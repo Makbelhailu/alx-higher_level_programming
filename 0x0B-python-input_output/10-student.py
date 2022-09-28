@@ -14,7 +14,8 @@ class Student:
     def to_json(self, attrs=None):
         """return the dictionary"""
         dicts = {}
-        for i in attrs:
-            dicts[i] = self.__dict__[i]
+        if type(attrs) is list and all([type(attr) == str for attr in attrs]):
+            for i in attrs:
+                dicts[i] = self.__dict__[i]
 
         return dicts
