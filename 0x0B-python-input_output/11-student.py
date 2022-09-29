@@ -4,6 +4,7 @@
 
 class Student():
     """Student class"""
+
     def __init__(self, first_name, last_name, age):
         """Initializes Student"""
         self.first_name = first_name
@@ -20,5 +21,5 @@ class Student():
 
     def reload_from_json(self, json):
         """Method for loading attributes from json"""
-        for k, val in json.items():
-            self.__dict__[k] = val
+        for key, val in json.items():
+            self.__dict__[key] = val
