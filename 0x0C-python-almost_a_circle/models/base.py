@@ -6,6 +6,7 @@ import turtle as t
 import time
 from random import randrange
 
+
 class Base():
     """Base class"""
     ___nb_objects = 0
@@ -105,20 +106,20 @@ class Base():
         w_h = t.window_height()
         w_w = t.window_width()
         center = -(w_w/2 - 20), (w_h/2 - 20)
-        l = w_w * 0.7
+        ln = w_w * 0.7
         s = 20
-        t.setpos(center)        #+ve x
+        t.setpos(center)
         t.down()
-        t.forward(l)
+        t.forward(ln)
         t.left(90)
-        t.setpos(center)        #-ve y
+        t.setpos(center)
         t.forward(s)
         t.left(90)
-        t.setpos(center)        #-ve x
+        t.setpos(center)
         t.forward(s)
         t.left(90)
-        t.setpos(center)        #+ve y
-        t.forward(l)
+        t.setpos(center)
+        t.forward(ln)
         t.left(90)
         t.up()
         t.setpos(center)
@@ -130,7 +131,7 @@ class Base():
                 h = i.size
                 w = i.size
             except AttributeError:
-                h = i.height 
+                h = i.height
                 w = i.width
             x = i.x
             y = i.y
