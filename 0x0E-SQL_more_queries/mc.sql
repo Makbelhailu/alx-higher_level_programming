@@ -1,0 +1,3 @@
+--
+CREATE TABLE hbtn_0c_0.MAK (
+	id INT DEFAULT 1);
