@@ -1,4 +1,4 @@
-#!/us4/bin/node
+#!/usr/bin/node
 // import { argv } from 'node:process';
 const argv = process.argv;
 const x = argv.length;
