@@ -1,7 +1,5 @@
 #!/usr/bin/node
-if (process.argv.length === 3) {
-  console.log(1);
-} else if (process.argv.length < 3) {
+if (process.argv.length <= 3) {
   console.log(0);
 } else {
   const arg = process.argv.map(Number)
