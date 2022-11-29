@@ -1,0 +1,5 @@
+chmod 777 *
+semi *.js
+git add .
+git commit -m "python is cool"
+git push origin master
